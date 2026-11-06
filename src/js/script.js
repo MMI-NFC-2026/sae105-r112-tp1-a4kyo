@@ -1,17 +1,17 @@
-const aMettreEnRouge = document.querySelector("#a-mettre-en-rouge")
-const enRougeSuiteAClick = document.querySelector("#en-rouge-suite-a-click")
-const collH2 = document.querySelectorALL("h2")
-
-
-
-
+const aMettreEnRouge = document.querySelector("#a-mettre-en-rouge");
 aMettreEnRouge.style.color = "red";
-enRougeSuiteAClick.addEventListener("click", (evt)=>{
-	enRougeSuiteAClick.style.color = "red"
+
+
+const enRougeSuiteAClick = document.querySelector("#en-rouge-suite-a-click");
+enRougeSuiteAClick.addEventListener("click", (evt) => {
+	enRougeSuiteAClick.style.color = "red";
 });
 
-collH2.forEach((elm)=>{
+
+
+const collH2 = document.querySelectorAll("h2");
+collH2.forEach((elm) => {
 	elm.addEventListener("click", (evt)=>{
-		elm.style.color = "red";
+		evt.target.style.color = "red";
 	});
 });
